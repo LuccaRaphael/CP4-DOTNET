@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jT9V7MSncOG+FMqUbAKhxwgcmkFRuJT3FkqnK6KefXw=",
+  "Source": "cp4-exchange-api",
+  "BasePath": "_content/cp4-exchange-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
