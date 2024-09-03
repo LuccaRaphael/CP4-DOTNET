@@ -1,3 +1,4 @@
+
 # CP4-DOTNET
 
 ## Visão Geral
@@ -6,27 +7,23 @@ Este projeto consiste em uma WebAPI desenvolvida em .NET com o objetivo de reali
 
 ## Funcionalidades Principais
 
-- **Implementação da Interface IConversionRate:** A interface IConversionRate foi implementada para lidar com a lógica de conversão de moeda, conforme especificado na [documentação oficial da API](https://www.exchangerate-api.com/docs/c-sharp-currency-api).
-  
-- **Implementação da Interface IExchangeController:** A interface IExchangeController foi implementada para expor o endpoint de conversão de moeda, permitindo que clientes possam solicitar a taxa de conversão de USD para BRL.
+- **Implementação da Interface IConversionRate:** A interface `IConversionRate` foi implementada para lidar com a lógica de conversão de moeda. Ela possui a propriedade `BRL`, que é utilizada para armazenar a taxa de câmbio do BRL.
+
+- **Implementação da Interface IExchangeController:** A interface `IExchangeController` foi implementada para expor o endpoint de conversão de moeda, permitindo que clientes possam solicitar a taxa de conversão de USD para BRL.
 
 - **Chamada ao Endpoint Exchangerate-API:** A API faz a chamada ao endpoint `https://v6.exchangerate-api.com` seguindo as melhores práticas de desenvolvimento. A chamada é validada com base no retorno do método `IsSuccessStatusCode` para garantir que a solicitação foi bem-sucedida.
 
-- **Documentação Pública:** O projeto possui uma documentação pública detalhada disponível em uma Wiki no Azure DevOps, abordando os principais aspectos da solução, como arquitetura, detalhes de implementação, e exemplos de uso.
-
-- **Swagger:** A WebAPI inclui um Swagger bem formatado e detalhado, que descreve os endpoints disponíveis e como interagir com eles.
+- **Swagger:** A WebAPI inclui um Swagger bem formatado e detalhado, que descreve os endpoints disponíveis e fornece uma interface visual para explorar e testar a API diretamente do navegador.
 
 ## Estrutura do Projeto
 
 - **Controllers/ExchangeController.cs:** Controlador responsável pelo endpoint `/api/exchange`. Faz a chamada ao serviço de câmbio e retorna a conversão de USD para BRL.
-  
-- **Services/ConversionRateService.cs:** Serviço que implementa a interface IConversionRate, responsável pela lógica de comunicação com a API de câmbio.
 
 - **Interfaces/IConversionRate.cs:** Interface que define o contrato para o serviço de conversão de moeda.
 
 - **Interfaces/IExchangeController.cs:** Interface que define o contrato para o controlador responsável pela conversão.
 
-- **Startup.cs:** Configuração da WebAPI, incluindo injeção de dependências e configuração do Swagger.
+- **Program.cs:** Configuração da WebAPI, incluindo injeção de dependências e configuração do Swagger.
 
 ## Endpoints Disponíveis
 
@@ -41,9 +38,9 @@ GET http://localhost:5232/api/exchange
 **Exemplo de Resposta:**
 ```json
 {
-  "base_currency": "USD",
-  "target_currency": "BRL",
-  "exchange_rate": 5.25
+  "CurrencyPair": "USD/BRL",
+  "Rate": 5.25,
+  "Date": "2024-09-03T00:00:00Z"
 }
 ```
 
@@ -53,7 +50,7 @@ O Swagger pode ser acessado em:
 http://localhost:5232/swagger
 ```
 
-Este documento oferece uma interface visual para explorar os endpoints e testar a API diretamente do navegador.
+O Swagger fornece uma interface visual para explorar e testar a API diretamente do navegador.
 
 ## Guia de Execução
 
@@ -61,22 +58,33 @@ Este documento oferece uma interface visual para explorar os endpoints e testar 
 
 - [.NET SDK](https://dotnet.microsoft.com/download)
 
-### Execução da API
+### Configuração e Execução
 
-1. Clone o repositório do projeto.
-2. No terminal, navegue até o diretório do projeto e execute o comando:
+1. **Clone o Repositório:** Clone o repositório GitHub para sua máquina local:
+   ```
+   git clone https://github.com/LuccaRaphael/CP4-DOTNET.git
+   ```
+   
+2. **Restaure as Dependências:** Navegue até o diretório do projeto e restaure as dependências do .NET:
+   ```
+   dotnet restore
+   ```
+
+3. **Execute a API:** Utilize o comando `dotnet run` para iniciar a aplicação:
    ```
    dotnet run
    ```
-3. Acesse o endpoint principal da API em:
+
+4. **Acesse o Endpoint:** Após a aplicação ser iniciada, acesse o endpoint para obter a taxa de câmbio:
    ```
    http://localhost:5232/api/exchange
    ```
-4. Para visualizar a documentação interativa (Swagger), acesse:
+
+5. **Documentação via Swagger:** Explore a documentação da API através do Swagger:
    ```
    http://localhost:5232/swagger
    ```
 
 ## Considerações Finais
 
-Este projeto foi desenvolvido seguindo as melhores práticas de desenvolvimento, para a entrega do Checkpoint 4 da matéria de ADVANCED BUSINESS DEVELOPMENT WITH .NET
+Este projeto foi desenvolvido seguindo as melhores práticas de desenvolvimento, para a entrega do Checkpoint 4 da matéria de ADVANCED BUSINESS DEVELOPMENT WITH .NET.
