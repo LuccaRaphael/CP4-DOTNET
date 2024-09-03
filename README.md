@@ -79,4 +79,4 @@ Este documento oferece uma interface visual para explorar os endpoints e testar 
 
 ## Considerações Finais
 
-Este projeto foi desenvolvido seguindo as melhores práticas de desenvolvimento em .NET, garantindo uma solução escalável e de fácil manutenção. A documentação pública e o Swagger fornecem uma interface amigável para desenvolvedores e usuários finais explorarem e integrarem-se com a API.
+Este projeto foi desenvolvido seguindo as melhores práticas de desenvolvimento, para a entrega do Checkpoint 4 da matéria de ADVANCED BUSINESS DEVELOPMENT .NET
