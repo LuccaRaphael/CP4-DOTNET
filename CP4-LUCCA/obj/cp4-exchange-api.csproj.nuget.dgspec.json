@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucca\\Videos\\cp4-exchange-api\\cp4-exchange-api.csproj": {}
+    "C:\\Users\\labsfiap\\Desktop\\CP4-DOTNET\\CP4-LUCCA\\cp4-exchange-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucca\\Videos\\cp4-exchange-api\\cp4-exchange-api.csproj": {
+    "C:\\Users\\labsfiap\\Desktop\\CP4-DOTNET\\CP4-LUCCA\\cp4-exchange-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucca\\Videos\\cp4-exchange-api\\cp4-exchange-api.csproj",
+        "projectUniqueName": "C:\\Users\\labsfiap\\Desktop\\CP4-DOTNET\\CP4-LUCCA\\cp4-exchange-api.csproj",
         "projectName": "cp4-exchange-api",
-        "projectPath": "C:\\Users\\lucca\\Videos\\cp4-exchange-api\\cp4-exchange-api.csproj",
-        "packagesPath": "C:\\Users\\lucca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucca\\Videos\\cp4-exchange-api\\obj\\",
+        "projectPath": "C:\\Users\\labsfiap\\Desktop\\CP4-DOTNET\\CP4-LUCCA\\cp4-exchange-api.csproj",
+        "packagesPath": "C:\\Softwares\\Nuget",
+        "outputPath": "C:\\Users\\labsfiap\\Desktop\\CP4-DOTNET\\CP4-LUCCA\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lucca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "c:\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

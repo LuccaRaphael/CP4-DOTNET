@@ -20,6 +20,7 @@ namespace cp4_exchange_api.Controllers
 
         [HttpGet]
         [SwaggerOperation(Summary = "Obtém a taxa de câmbio mais recente do BRL.", Description = "Retorna a taxa de câmbio do USD para BRL.")]
+        [SwaggerResponse(200, "Taxa de câmbio obtida com sucesso.", typeof(ConversionRate))]
         public async Task<JsonResult> GetExchangeRate()
         {
             try

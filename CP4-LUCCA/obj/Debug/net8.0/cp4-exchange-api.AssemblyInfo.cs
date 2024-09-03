@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cp4-exchange-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2047be306bf139aac4d9d6c470d81bca140f4f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("cp4-exchange-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cp4-exchange-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
